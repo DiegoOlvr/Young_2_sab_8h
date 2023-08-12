@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(129, 129, 116);
+    height: 150px;
+}
+
+main {
+    width: 100%;
+    background-color: blueviolet;
+    height: 400px;
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    background-color: green;
+    height: 100px;
+}
+
+header div h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+main .ingredientes-conteudo{
+    background-color: rgb(155, 152, 152);
+    width: 30%;
+}
+
+main .modo-preparo-conteudo{
+    background-color: rgb(180, 167, 125);
+    width: 70%;
+}
+
+footer {
+    background-color: rgb(23, 23, 23);
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+    font-style: italic;
+}
