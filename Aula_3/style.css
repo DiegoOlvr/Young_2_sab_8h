@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Tilt+Prism&display=swap');
+
 
 
 * {
@@ -24,6 +26,7 @@ main {
     background-color: blueviolet;
     height: 400px;
     display: flex;
+    font-family: 'Tilt Prism', cursive;
 }
 
 footer {
@@ -40,15 +43,55 @@ header div h1 {
     font-family: 'Poppins', sans-serif;
 }
 
-main .ingredientes-conteudo{
+main .ingredientes-conteudo {
     background-color: rgb(155, 152, 152);
     width: 30%;
 }
 
-main .modo-preparo-conteudo{
+main .modo-preparo-conteudo {
     background-color: rgb(180, 167, 125);
     width: 70%;
 }
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+
+main .ingredientes-conteudo h2 {
+    color: white;
+}
+
+.lista-ingredientes {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.lista-ingredientes ul {
+    list-style: none;
+}
+.lista-ingredientes ul li {
+    padding: 5px;
+    font-weight: bolder;
+}
+main .modo-preparo-conteudo h2 {
+    color: rgb(254, 0, 0);
+    
+}
+.lista-modo-preparo {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lista-modo-preparo  ol li{
+    padding: 5px;
+    font-weight: bolder;
+}
+
 
 footer {
     background-color: rgb(23, 23, 23);
