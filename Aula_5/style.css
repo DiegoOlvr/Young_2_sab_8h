@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Mono&family=Tilt+Prism&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right,blue, purple);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+}
+
+section{
+    background-color: rgba(0, 0, 0, 0.61);
+    /* backdrop-filter: blur(50%); */
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 10px 10px 10px black;
+}
+
+section div {
+    margin: 10px;
+}
+
+section div img{
+    object-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+}
+
+section div p {
+    font-size: 25px;
+}
+
+section div button {
+    height: 40px;
+    width: 80px;
+    border-radius: 5px;
+    border: none;
+    margin: 0px 10px;
+    color: white;
+    font-size: 18px;
+}
+
+section div .logar{
+    background-color: green;
+}
+
+section div .sair {
+    background-color: red;
+}
