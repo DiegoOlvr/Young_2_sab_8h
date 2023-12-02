@@ -68,29 +68,26 @@ function carregar_questoes() {
 }
 
 function desmarcar() {
-    RESPOSTAS.forEach((resp_elemento) => {
-        resp_elemento.checked = false
+    RESPOSTAS.forEach((resposta) => {
+        resposta.checked = false
     })
 }
 
 function pegar_resposta() {
     let resp = undefined
-
     RESPOSTAS.forEach((resposta) => {
         if (resposta.checked) {
-            resp = resposta.id;
+            resp = resposta.id
         }
     })
 
     return resp
-
 }
 
 BOTAO.addEventListener('click', () => {
     const RESP_PLAYER = pegar_resposta()
     const TOTAL_PERGUNTAS = QUESTOES_QUIZ.length
     console.log(RESP_PLAYER)
-
     if (RESP_PLAYER) {
         if (RESP_PLAYER === QUESTOES_QUIZ[questao_atual].correta) {
             qtd_corretas++
@@ -100,17 +97,13 @@ BOTAO.addEventListener('click', () => {
             carregar_questoes()
         }
         else {
-            CONTEINER_QUIZ.innerHTML = `<h1 class="resetar">Você acertou ${qtd_corretas}/${TOTAL_PERGUNTAS} questões </h1>
-            <button class="resetar-btn" onclick='location.reload()'> Resetar </button>`
+            CONTEINER_QUIZ.innerHTML = `<h1 class="resetar">Você acertou ${qtd_corretas}/${TOTAL_PERGUNTAS} questões</h1>
+            <button class="resetar-btn" onclick='location.reload()'>Resetar </button>`            
         }
     }
     else {
-        console.log('Escolha algo')
+        window.alert('Escolha uma alternativa')
     }
 })
 
 carregar_questoes()
-
-
-
-// click do botão
